@@ -2,5 +2,5 @@
     --Red:color(#FF0000); /* rojo puro */
 }
 .buttom1{
-    
+    color: var(--Red);
 }
