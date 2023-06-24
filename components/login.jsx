@@ -1,23 +1,18 @@
-import { StatusBar } from 'expo-status-bar';
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
 
-export default function login(){
+import React from 'react';
+import { StyleSheet, Text, View, TextInput } from 'react-native';
+import ReposiList from './repositoriolist';
+import { Constants } from 'expo-constants';
+
+const Inicio = () =>{
   return (
-    <view style={styleLogin.back}>
-      <Text>estoy enamorada de un cadete del colegio militar</Text>
-      <StatusBar style="auto" />
-    </view>
-  );
+      <View style={{ marginTop: 30, flexGrow: 1}}>
+      <ReposiList />
+      </View>
+  )
 }
 
-const styleLogin= StyleSheet.create({
 
-back:{
-  backgroundColor : 'red' ,
-  textAlign : 'center',
-  border : 'black solid 1px',
-},
 
-});
+export default Inicio
 
