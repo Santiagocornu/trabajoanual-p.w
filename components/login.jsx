@@ -24,10 +24,10 @@ const styles = StyleSheet.create({
     flex: 1,
     marginTop: Constants.statusBarHeight,
     padding: 24,
-    backgroundColor: '#eaeaea',
+    backgroundColor: 'green',
   },
   Body:{
-    flex: 1
+    flex: 1,
   }
 }
 )

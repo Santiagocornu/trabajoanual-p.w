@@ -1,30 +1,37 @@
 import React from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import { View, Text, StyleSheet, Touchable, Image } from 'react-native';
+import Button from './Button';
 
 const Navbar = () => {
   return (
+    
     <View style={styles.navbar}>
-      <Text style={styles.navbarText}>Barra de navegación</Text>
+        <Button />
+      <Text styles={styles.navbarText}>Barra de navegación</Text>
     </View>
   );
 }
 
 const styles = StyleSheet.create({
+    img:{
+        width:30,
+        height:30,
+    },
   navbar: {
-    backgroundColor: 'blue',
+    backgroundColor: 'red',
     paddingTop: 20,
     paddingBottom: 10,
     paddingHorizontal: 10,
     flexDirection: 'row',
-    justifyContent: 'center',
-    alignItems: 'center',
+    textAlign: 'center',
     position: 'absolute',
     top: 0,
     left: 0,
     right: 0,
+    
   },
   navbarText: {
-    color: 'white',
+    color: 'black',
     fontSize: 18,
     fontWeight: 'bold',
   },
