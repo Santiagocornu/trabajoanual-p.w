@@ -28,6 +28,7 @@ const styles = StyleSheet.create({
   },
   Body:{
     flex: 1,
+    margin:0,
   }
 }
 )

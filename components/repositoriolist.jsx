@@ -33,8 +33,14 @@ const styles = StyleSheet.create({
       
     },
     text:{
+        margin:3,
         flex:1,
         flexDirection:'column',
+        backgroundColor:'green',
+        borderColor:'black',
+        borderWidth:2,
+        borderRadius:10,
+        padding:5,
     },
     box:{
         textAlign:'center',
@@ -44,16 +50,19 @@ const styles = StyleSheet.create({
         borderColor: 'black',
         borderRadius:30,
         flex:1,
-        flexDirection:'column',
+        flexDirection:'row',
     }
     ,
     Flat:{
         flex:1,
-        marginTop:40,
+        marginTop:38,
         borderColor:'black',
+        
     },
     img:{
-        wight:'100%',
+        borderRadius: 10,
+        borderColor:'black',
+        borderWidth:2,
         aspectRatio: 1,
     }
 }
