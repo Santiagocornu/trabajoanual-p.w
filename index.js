@@ -24,3 +24,7 @@ const facebook = {
   };
   
 export const facebookConfig = facebook;
+const google = {
+    client_id: "YOUR_CLIENT_ID.apps.googleusercontent.com",
+    scope: "profile email"
+  };
