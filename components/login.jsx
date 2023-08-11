@@ -1,6 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import { Colors } from 'react-native/Libraries/NewAppScreen';
 
 export default function login(){
   return (
@@ -19,9 +20,10 @@ back:{
   border : 'black solid 1px',
 },
 Button()
-    android:id="@+id/buttonClick",
+    android:id="@+id/buttonClick";
     android:layout_width="wrap_content",
     android:layout_height="wrap_content",
     android:text="Click aquí"
+    
 });
 
