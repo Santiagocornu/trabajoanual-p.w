@@ -23,3 +23,4 @@ const facebook = {
     return_scopes: false
   };
   
+export const facebookConfig = facebook;
