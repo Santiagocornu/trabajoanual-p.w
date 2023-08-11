@@ -10,3 +10,7 @@ import login from './components/login';
 registerRootComponent(App);
 registerRootComponent(login);
 
+Fondo{
+    background:lightblue;
+
+}
