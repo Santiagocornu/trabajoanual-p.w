@@ -18,10 +18,10 @@ back:{
   textAlign : 'center',
   border : 'black solid 1px',
 },
-<Button
-    android:id="@+id/buttonClick"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="Click aquí" />
+Button()
+    android:id="@+id/buttonClick",
+    android:layout_width="wrap_content",
+    android:layout_height="wrap_content",
+    android:text="Click aquí"
 });
 
