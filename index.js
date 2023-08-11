@@ -9,8 +9,17 @@ import login from './components/login';
 // the environment is set up appropriately
 registerRootComponent(App);
 registerRootComponent(login);
+import ReactModalLogin from "react-modal-login";
+import "react-modal-login/dist/react-modal-login.css";
 
-Fondo{
-    background:lightblue;
+//npm install --save react-modal-login
 
-}
+const facebook = {
+    appId: "YOUR FB APP ID GOES HERE",
+    cookie: true,
+    xfbml: true,
+    version: "v12.0",
+    scope: "email",
+    return_scopes: false
+  };
+  
