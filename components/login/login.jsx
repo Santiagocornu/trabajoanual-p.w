@@ -12,18 +12,3 @@ export default function login(){
   );
 }
 
-const styleLogin= StyleSheet.create({
-
-back:{
-  backgroundColor : 'red' ,
-  textAlign : 'center',
-  border : 'black solid 1px',
-},
-Button()
-    android:id="@+id/buttonClick";
-    android:layout_width="wrap_content",
-    android:layout_height="wrap_content",
-    android:text="Click aquí"
-    
-});
-
