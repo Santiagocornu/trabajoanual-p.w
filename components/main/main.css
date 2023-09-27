@@ -92,7 +92,9 @@ body{
     border-color: var(--grey-color);
     box-shadow: 0 4px 0 0 #bbbbbb;
 }
-
+.quiz-options li:active{
+    transform: scale(0.97);
+}
 
 
 
