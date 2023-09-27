@@ -59,7 +59,16 @@ body{
     margin-bottom: 2rem;
 }
 
-
+.quiz-question .category{
+    font-size: 0.9rem;
+    font-weight: 500;
+    background-color: var(--light-purple-color);
+    color: var(--light-color);
+    padding: .2rem .4rem;
+    border-radius: .2rem;
+    margin-top: 0.5rem;
+    display: inline-block;
+}
 
 
 
