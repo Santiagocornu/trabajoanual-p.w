@@ -73,6 +73,18 @@ body{
     list-style-type: none;
     margin: 1rem 0;
 }
+.quiz-options li{
+    border-radius: 0.5rem;
+    font-weight: 600;
+    margin: .7rem 0;
+    padding: .4rem 1.2rem;
+    cursor: pointer;
+    border: 3px solid var(--light-purple-color);
+    background-color: var(--light-purple-color);
+    color: var(--light-color);
+    box-shadow: 0 4px 0 0 #6c4298;
+    transition: var(--transition);
+}
 
 
 
