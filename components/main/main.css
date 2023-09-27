@@ -35,7 +35,10 @@ body{
     box-shadow: 0 4px 6px rgb(0 0 0 / 10%), 0 1px 3px rgb(0 0 0 / 10%);
 }
 
-
+.quiz-title{
+    text-align: center;
+    font-size: 2rem;
+}
 
 
 
