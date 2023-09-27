@@ -16,6 +16,15 @@
     align-items: center;
     justify-content: center;
 }
+body{
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    color: var(--dark-color);
+    background: var(--grey-color);
+}
+
+
+
 
 
 
