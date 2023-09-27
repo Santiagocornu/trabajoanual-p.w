@@ -11,6 +11,11 @@
     --grey-color: #f2f2f2;
     --transition: all 300ms ease-in-out;
 }
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 
 
