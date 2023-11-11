@@ -1,23 +1,27 @@
 import React, { useState } from 'react';
 import { createUserWithEmailAndPassword } from 'firebase/auth';
 import { AUTH } from '../../firebase/firestore';
+import { Link, NavLink, useNavigate } from 'react-router-dom';
+
 function Register() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const navigate = useNavigate();
 
   const handleSubmit = async (event) => {
     event.preventDefault();
     const auth = AUTH;
     try {
       await createUserWithEmailAndPassword(auth, email, password);
-      // Usuario registrado exitosamente
+      alert("Usuario registrado exitosamente");
+      navigate('/LoginEmail');
     } catch (error) {
-      console.error(error);
-      // Error al registrar usuario
+      alert(error);
     }
   };
 
   return (
+    <>
     <form onSubmit={handleSubmit}>
       <label>
         Correo electrónico:
@@ -29,6 +33,10 @@ function Register() {
       </label>
       <button type="submit">Registrar</button>
     </form>
+    <NavLink to="/LoginSelect">
+      <button>atras</button>
+    </NavLink>
+  </>
   );
 }
 

@@ -1,28 +1,32 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { signInWithPopup, GoogleAuthProvider } from 'firebase/auth';
-
 import { AUTH } from '../../firebase/firestore';
-
-
-
-
+import { useNavigate } from 'react-router-dom';
 
 function LoginGoogle() {
-    const auth = AUTH;
+  const [loading, setLoading] = useState(false);
+  const auth = AUTH;
+  const navigate = useNavigate();
+
   const signInWithGoogle = async () => {
+    setLoading(true);
     const provider = new GoogleAuthProvider();
 
     try {
       await signInWithPopup(auth, provider);
-      // User signed in successfully.
+      alert("Usuario logueado exitosamente");
+      navigate('/'); // Redirige al usuario a la ruta raíz
     } catch (error) {
-      console.error(error);
-      // Error signing in.
+      alert(error);
+    } finally {
+      setLoading(false);
     }
   };
 
   return (
-    <button onClick={signInWithGoogle}>Sign in with Google</button>
+    <button onClick={signInWithGoogle} disabled={loading}>
+      {loading ? "Cargando..." : "Iniciar sesión con Google"}
+    </button>
   );
 }
 

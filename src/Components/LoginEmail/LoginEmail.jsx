@@ -1,23 +1,27 @@
 import React, { useState } from 'react';
 import {signInWithEmailAndPassword } from 'firebase/auth';
 import { AUTH } from '../../firebase/firestore';
-function Login() {
+import { Link, NavLink , useNavigate} from 'react-router-dom';
+
+function LoginEmail() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const navigate=useNavigate();
 
   const handleSubmit = async (event) => {
     event.preventDefault();
     const auth = AUTH;
     try {
       await signInWithEmailAndPassword(auth, email, password);
-      // Usuario inició sesión exitosamente
+      alert("Usuario logueado exitosamente");
+      navigate('/')
     } catch (error) {
-      console.error(error);
-      // Error al iniciar sesión
+      alert(error);
     }
   };
 
   return (
+    <>
     <form onSubmit={handleSubmit}>
       <label>
         Correo electrónico:
@@ -29,7 +33,14 @@ function Login() {
       </label>
       <button type="submit">Iniciar sesión</button>
     </form>
+    <NavLink to="/RegisterEmail">
+    <button>¡registrese aca!</button>
+    </NavLink>
+    <NavLink to="/LoginSelect">
+      <button>atras</button>
+    </NavLink>
+    </>
   );
 }
 
-export default Login;
+export default LoginEmail;

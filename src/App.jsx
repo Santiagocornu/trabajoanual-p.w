@@ -1,19 +1,24 @@
 import { useState } from 'react'
+import { BrowserRouter,Routes,Route,  } from 'react-router-dom'
+import LoginSelect from './Components/LoginSelect/LoginSelect'
+import Naza from './Components/Naza/Naza'
+import LoginEmail from './Components/LoginEmail/LoginEmail'
 import Register from './Components/RegisterEmail/RegisterEmail'
-import Login from './Components/LoginEmail/LoginEmail'
-import LoginGoogle from './Components/LoginGoogle/LoginGoogle'
-import LoginGitHub from './Components/LoginGitHub/LoginGitHub'
-
 
 function App() {
   
 
   return (
     <>
-  <LoginGitHub></LoginGitHub>
-  <LoginGoogle></LoginGoogle>
-  <Register></Register>
-  <Login></Login>
+    <BrowserRouter>
+   <Routes>
+
+    <Route path='/' element={<Naza></Naza>}/>
+    <Route path='/LoginSelect' element={<LoginSelect></LoginSelect>}/>
+    <Route path='/LoginEmail' element={<LoginEmail></LoginEmail>}></Route>
+    <Route path='/RegisterEmail' element={<Register/>}></Route>
+   </Routes>
+   </BrowserRouter>
     </>
   )
 }

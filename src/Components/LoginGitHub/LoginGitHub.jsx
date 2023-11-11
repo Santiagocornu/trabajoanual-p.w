@@ -1,21 +1,19 @@
 import React from 'react';
 import { signInWithPopup, GithubAuthProvider } from 'firebase/auth';
 import { AUTH } from '../../firebase/firestore';
-
-
-
-
+import { useNavigate } from 'react-router-dom';
 
 function LoginGitHub() {
     const auth = AUTH;
+    const navigate = useNavigate();
   const signInWithGithub = async () => {
     const provider = new GithubAuthProvider();
     try {
       await signInWithPopup(auth, provider);
-      // User signed in successfully.
+      alert("Usuario logueado exitosamente");
+      navigate('/'); // Redirige al usuario a la ruta raíz
     } catch (error) {
-      console.error(error);
-      // Error signing in.
+      alert(error);
     }
   };
 
