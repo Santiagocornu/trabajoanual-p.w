@@ -1,13 +1,18 @@
 import React, { useState, useEffect } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import { app, AUTH } from '../../firebase/firestore';
+import axios from 'axios';
 
 const Naza = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [userName, setUserName] = useState('');
 
   useEffect(() => {
     AUTH.onAuthStateChanged((user) => {
       setIsLoggedIn(!!user);
+      if (user) {
+        setUserName(user.displayName || user.email);
+      }
     });
   }, []);
 
@@ -35,6 +40,7 @@ const Naza = () => {
   return (
     <div>
       Naza
+      {isLoggedIn && <p>{userName}</p>}
       <NavLink to="LoginSelect">
         {isLoggedIn ? (
           <>

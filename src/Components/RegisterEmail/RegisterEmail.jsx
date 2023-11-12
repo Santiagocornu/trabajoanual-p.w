@@ -5,6 +5,7 @@ import { Link, NavLink, useNavigate } from 'react-router-dom';
 
 function Register() {
   const [email, setEmail] = useState('');
+  const [emailRes, setEmailRes] = useState('');
   const [password, setPassword] = useState('');
   const navigate = useNavigate();
 
@@ -20,12 +21,26 @@ function Register() {
     }
   };
 
-  return (
-    <>
-    <form onSubmit={handleSubmit}>
+  const detectEmail = (event, Email, EmailRes) => {
+    event.preventDefault();
+    if (Email === EmailRes) {
+      handleSubmit(event);
+    } else {
+      alert("El correo electrónico no coincide");
+    }
+  };
+  
+ return(
+  <>
+  <form onSubmit={(event) => detectEmail(event, email, emailRes)}>
       <label>
         Correo electrónico:
-        <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} required />
+        <input
+         type="email" value={email} onChange={(e) => setEmail(e.target.value)} required />
+      </label>
+      <label>
+        confirmar Correo electrónico:
+        <input type="email" value={emailRes} onChange={(e) => setEmailRes(e.target.value)} required />
       </label>
       <label>
         Contraseña:
@@ -37,7 +52,7 @@ function Register() {
       <button>atras</button>
     </NavLink>
   </>
-  );
+ )
 }
 
 export default Register;
