@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import { app, AUTH } from '../../firebase/firestore';
 import axios from 'axios';
+import ChangeName from '../ChangeName/ChangeName';
 
 const Naza = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -51,6 +52,7 @@ const Naza = () => {
           <button>Loguearse</button>
         )}
       </NavLink>
+      <ChangeName></ChangeName>
     </div>
   );
 };
