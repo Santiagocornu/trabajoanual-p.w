@@ -1,0 +1,11 @@
+.answer {
+    /* Estilos comunes para todos los elementos */
+  }
+  
+  .active {
+    background-color: red; /* Estilo para elementos activos */
+  }
+  
+  .inactive {
+    background-color: red; /* Estilo para elementos inactivos */
+  }
