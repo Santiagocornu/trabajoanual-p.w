@@ -4,6 +4,7 @@ import { app, AUTH } from '../../firebase/firestore';
 import axios from 'axios';
 import ChangeName from '../ChangeName/ChangeName';
 import PasswordChange from '../ChangePassword/ChangePassword';
+import './Home.css';
 
 const Naza = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -50,7 +51,7 @@ const Naza = () => {
             <button onClick={handleDeleteUser}>Eliminar Usuario</button>
           </>
         ) : (
-          <button>Loguearse</button>
+          <button className='Boton'>Loguearse</button>
         )}
       </NavLink>
       <ChangeName></ChangeName>
