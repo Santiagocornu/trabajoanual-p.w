@@ -2,6 +2,7 @@ import React from 'react';
 import LoginGitHub from '../LoginGitHub/LoginGitHub';
 import LoginGoogle from '../LoginGoogle/LoginGoogle';
 import { Link, NavLink } from 'react-router-dom';
+import './LoginSelect.css';
 
 function LoginSelect() {
 
