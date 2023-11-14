@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { getAuth, EmailAuthProvider, reauthenticateWithCredential, updatePassword } from 'firebase/auth';
 import { AUTH } from '../../firebase/firestore';
-import '.Naza/Home.css';
+import './ChangePassword.css'
 
 function PasswordChange() {
     const [currentPassword, setCurrentPassword] = useState('');
