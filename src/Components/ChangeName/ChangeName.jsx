@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { AUTH } from '../../firebase/firestore';
 import { updateProfile } from "firebase/auth";
+import './ChangeName.css'
 
 const ChangeName = () => {
   const [newName, setNewName] = useState('');
