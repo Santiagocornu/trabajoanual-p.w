@@ -5,6 +5,8 @@ import axios from 'axios';
 import ChangeName from '../ChangeName/ChangeName';
 import PasswordChange from '../ChangePassword/ChangePassword';
 import './Home.css';
+import styled from 'styled-components';
+
 
 const Naza = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -59,5 +61,6 @@ const Naza = () => {
     </div>
   );
 };
+
 
 export default Naza;
