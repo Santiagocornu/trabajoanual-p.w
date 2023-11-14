@@ -7,9 +7,43 @@ body {
     justify-content: center;
     height: 100vh;
     background-color: black;
+    background: url('https://media.istockphoto.com/id/498478219/es/foto/estrellas-en-cielo-nocturno.jpg?b=1&s=612x612&w=0&k=20&c=STJRTrEq8bBqKlQDGudgS0yy72CN9CBGUeyJsbxfouc=');
 }
 
 .centered-content {
     text-align: center;
     color: white; 
+    margin-bottom: 100px; 
+}
+
+.caja1 {
+    margin: 60px; /* Puedes ajustar el valor según sea necesario */
+    border: 4px solid rgb(255, 255, 255); /* Ajusta el ancho y el color según tus preferencias */
+    border-radius: 10px; /* Ajusta el radio para esquinas redondeadas */
+    padding: 60px; /* Puedes agregar padding si lo deseas */
+    background-color: rgba(7, 7, 46, 0.473);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Ajustes para el componente ChangeName dentro de la caja1 */
+.ChangeName {
+    margin-top: 30px; /* Ajusta el margen superior del componente ChangeName según sea necesario */
+    margin-left: 20px; /* Ajusta el margen izquierdo del componente ChangeName según sea necesario */
+    width: 100%; /* Puedes ajustar el ancho según sea necesario */
+    height: 200px; /* Puedes ajustar la altura según sea necesario */
+    font-size: 24px; /* Ajusta el tamaño del texto según sea necesario */
+}
+
+/* Ajustes para el componente PasswordChange dentro de la caja1 */
+.PasswordChange {
+    margin-top: 30px; /* Ajusta el margen superior del componente PasswordChange según sea necesario */
+    width: 100%; /* Puedes ajustar el ancho según sea necesario */
+    height: 150px; /* Puedes ajustar la altura según sea necesario */
+}
+
+/* Ajustes para los botones dentro de la caja1 */
+.caja1 button {
+    margin: 10px; /* Ajusta el margen entre los botones según sea necesario */
 }

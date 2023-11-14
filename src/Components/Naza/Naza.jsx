@@ -42,7 +42,7 @@ const Naza = () => {
   };
 
   return (
-    <div className="video-background">
+    <div className="caja1">
 
       <div className="centered-content">
         {isLoggedIn && <p>{userName}</p>}

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { getAuth, EmailAuthProvider, reauthenticateWithCredential, updatePassword } from 'firebase/auth';
 import { AUTH } from '../../firebase/firestore';
+import './Home.css';
 
 function PasswordChange() {
     const [currentPassword, setCurrentPassword] = useState('');
