@@ -25,6 +25,7 @@ form {
 label {
     margin-top: 10px;
     color: #333;
+    width: 100%; /* Ajusta el ancho según sea necesario */
 }
 
 input {
