@@ -1,13 +1,27 @@
 /* LoginSelect.css */
 
-div {
+.Caja1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    width: 100%; /* Ajusta el ancho según sea necesario */
+    margin: 0 auto; /* Centra la caja horizontalmente */
+    border: 2px solid #ccc;
+    padding: 20px; /* Ajusta el relleno interno de la caja según sea necesario */
+    background-color: rgba(7, 7, 46, 0.473);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s;
+}
+
+.button-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 20px;
 }
 
-button {
+.login-button {
     background-color: #007BFF;
     color: white;
     padding: 10px 15px;
@@ -18,17 +32,10 @@ button {
     transition: background-color 0.3s;
 }
 
-button:hover {
-    background-color: #0056b3;
+.login-button:hover {
+    background-color: #0057b3b2;
 }
 
-/* Estilos específicos para NavLink (si es necesario) */
-NavLink {
-    text-decoration: none;
-    color: #007BFF;
-    margin-top: 10px;
-}
-
-NavLink:hover {
-    text-decoration: underline;
+.separator {
+    height: 20px;
 }
