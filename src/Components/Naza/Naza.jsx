@@ -42,7 +42,7 @@ const Naza = () => {
 
   return (
     <div>
-      Naza
+    
       {isLoggedIn && <p>{userName}</p>}
       <NavLink to="LoginSelect">
         {isLoggedIn ? (
