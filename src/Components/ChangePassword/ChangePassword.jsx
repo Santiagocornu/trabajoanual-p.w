@@ -33,6 +33,7 @@ function PasswordChange() {
     };
 
     return (
+        <div className="caja1">
         <div>
             <input 
                 type="password" 
@@ -49,6 +50,7 @@ function PasswordChange() {
             <button onClick={handleChangePassword}>
                 Cambiar Contraseña
             </button>
+        </div>
         </div>
     );
 }
