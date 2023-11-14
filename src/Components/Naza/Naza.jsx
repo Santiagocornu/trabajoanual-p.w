@@ -44,8 +44,7 @@ const Naza = () => {
   return (
     <div className="video-background">
       <video autoPlay muted loop className="video1">
-        <source src="https://player.vimeo.com/external/314181352.sd.mp4?s=d2cd7a37f6250cd543e6d13209730b4bcf242130&profile_id=164&oauth2_token_id=57447761" type="video/mp4" />
-        Tu navegador no soporta el elemento de video.
+        <source src="../assets/pexels_videos_1851190 (2160p)" type="video/mp4" />
       </video>
 
       <div className="centered-content">
