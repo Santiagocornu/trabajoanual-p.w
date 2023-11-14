@@ -3,6 +3,7 @@ import { Link, NavLink } from 'react-router-dom';
 import { app, AUTH } from '../../firebase/firestore';
 import axios from 'axios';
 import ChangeName from '../ChangeName/ChangeName';
+import PasswordChange from '../ChangePassword/ChangePassword';
 
 const Naza = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -53,6 +54,7 @@ const Naza = () => {
         )}
       </NavLink>
       <ChangeName></ChangeName>
+      <PasswordChange></PasswordChange>
     </div>
   );
 };
