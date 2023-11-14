@@ -6,7 +6,7 @@
     align-items: center;
     justify-content: center;
     height: 60vh;
-    width: 50%; /* Ajusta el ancho según sea necesario */
+    width: 150%; /* Ajusta el ancho según sea necesario */
     margin: 0 auto; /* Centra la caja horizontalmente */
     border: 2px solid #ccc;
     padding: 20px; /* Ajusta el relleno interno de la caja según sea necesario */
