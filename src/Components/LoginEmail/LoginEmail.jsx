@@ -22,6 +22,7 @@ function LoginEmail() {
   };
 
   return (
+    <div className='Caja1'>
     <>
     <form onSubmit={handleSubmit}>
       <label>
@@ -41,6 +42,7 @@ function LoginEmail() {
       <button>atras</button>
     </NavLink>
     </>
+    </div>
   );
 }
 
