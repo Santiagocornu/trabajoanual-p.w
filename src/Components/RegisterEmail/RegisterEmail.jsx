@@ -32,6 +32,7 @@ function Register() {
   };
   
  return(
+  <div className='Caja1'>
   <>
   <form onSubmit={(event) => detectEmail(event, email, emailRes)}>
       <label>
@@ -53,6 +54,7 @@ function Register() {
       <button>atras</button>
     </NavLink>
   </>
+  </div>
  )
 }
 
