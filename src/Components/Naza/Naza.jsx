@@ -43,9 +43,6 @@ const Naza = () => {
 
   return (
     <div className="video-background">
-      <video autoPlay muted loop className="video1">
-        <source src="../assets/pexels_videos_1851190 (2160p)" type="video/mp4" />
-      </video>
 
       <div className="centered-content">
         {isLoggedIn && <p>{userName}</p>}
