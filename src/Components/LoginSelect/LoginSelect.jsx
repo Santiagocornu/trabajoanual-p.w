@@ -7,6 +7,7 @@ import './LoginSelect.css';
 function LoginSelect() {
 
   return (
+    <div className="Caja1">
     <div>
       <LoginGitHub/>
       <LoginGoogle/>
@@ -16,6 +17,7 @@ function LoginSelect() {
       <NavLink to="/">
       <button>entrar sin loguearse</button>
       </NavLink>
+    </div>
     </div>
   );
 }
