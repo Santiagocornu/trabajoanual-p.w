@@ -27,7 +27,7 @@ const ChangeName = () => {
 
   return (
     <form onSubmit={handleSubmit}>
-      <label>
+      <label className='h'>
         New name:
         <input type="text" value={newName} onChange={handleChange} />
       </label>

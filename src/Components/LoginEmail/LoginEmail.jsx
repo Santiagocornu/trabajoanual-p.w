@@ -22,7 +22,16 @@ function LoginEmail() {
   };
 
   return (
+<>
+    <video autoPlay loop muted playsInline className="back-video">
+    <source
+      src="https://player.vimeo.com/external/476642450.sd.mp4?s=ab80d3071fd28593a0aca4fb7747bbddef3e1fef&profile_id=164&oauth2_token_id=57447761"
+      type="video/mp4"
+    />
+  </video>
+    
     <div className='Caja1'>
+      <p className='p'>
     <>
     <form onSubmit={handleSubmit}>
       <label>
@@ -42,7 +51,11 @@ function LoginEmail() {
       <button>atras</button>
     </NavLink>
     </>
+    </p>
     </div>
+  
+    </>
+    
   );
 }
 
